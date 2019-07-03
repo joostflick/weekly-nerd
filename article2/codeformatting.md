@@ -32,7 +32,7 @@ Using linters/formatting tools gains you the following advantages:
 - You can focus on code, instead of style. When using a tool to format your code you will be able to just write whatever you want and the tool will make sure it is displayed consistently.
 - You will write code faster because you don't have to wonder which piece of code looks better, this will be sorted out for you on every save.
 - Your codebase will have a consistent style.
-- Others can use the same settings so that you and your team are always working in the same code structure and formatting.
+- Others can use the same settings, so that you and your team are always working in the same code structure and formatting.
 
 ### How to incorporate tools into my workflow?
 
@@ -48,9 +48,9 @@ Example of auto formatting for more readability
 
 One important but often overlooked part of code formatting is naming things.
 
-First of all, like with every aspect discussed so far, make sure your naming is consistent. If you use ``` count ``` somewhere and ``` total ``` somewhere else people could get confused. 
+First of all, like with every aspect discussed so far, make sure your naming is consistent. If you use ``` count ``` somewhere and ``` total ``` somewhere else, people could get confused. 
 
-Make sure names are descriptive and ideally not too long. Choosing a naming style like ```camelCase``` or ```snake_case``` and sticking with one of those two can greatly improve readability.
+Make sure names are descriptive and, ideally, not too long. Choosing a naming style like ```camelCase``` or ```snake_case``` and sticking with one of those two can greatly improve readability.
 
 Since tools won't help you when naming your variables, it is important that you take care of this issue yourself.
 
@@ -58,7 +58,7 @@ Since tools won't help you when naming your variables, it is important that you 
 
 Once you start developing more complex and larger codebases, it can be a good idea to start working with modules.
 
-Different languages have different approaches to working with modules, but I will be looking at it from a Javascript perspective because that is the language I am most familiar with.
+Different languages have different approaches to working with modules, but I will be looking at it from a Javascript perspective, because that is the language I am most familiar with.
 
 Modules are another way of creating a more maintainable codebase, and help programmers keep an overview of where which functionality is written. 
 
@@ -87,4 +87,3 @@ Consistency and codeformatting isn't the only thing that matters, but it can hav
 - [Why consistency is one of the top indicators of good code](https://medium.com/@jgefroh/why-consistency-is-one-of-the-top-indicators-of-good-code-352ba5d62020)
 - [Keep your code clean forever](https://medium.com/@jtomaszewski/keep-your-code-clean-forever-65c71f7f2df)
 - [Basics of modular javascript](https://medium.com/@crohacz_86666/basics-of-modular-javascript-2395c82dd93a)
-
