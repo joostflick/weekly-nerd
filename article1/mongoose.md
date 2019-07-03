@@ -1,25 +1,22 @@
-# Using Mongoose in conjunction with Node.js
+# Using Mongoose in conjunction with Node.js <!-- omit in toc -->
 
-## Table of contents    
+## Table of contents <!-- omit in toc -->
 
-- [Using Mongoose in conjunction with Node.js](#Using-Mongoose-in-conjunction-with-Nodejs)
-  - [Table of contents](#Table-of-contents)
-  - [What is Mongoose?](#What-is-Mongoose)
-  - [MongoDB](#MongoDB)
-  - [Terminology](#Terminology)
-  - [Setting up the database](#Setting-up-the-database)
-    - [Creating a schema](#Creating-a-schema)
-    - [Adding a record](#Adding-a-record)
-    - [Retrieving a record](#Retrieving-a-record)
-  - [Conclusion](#Conclusion)
-      - [sources:](#sources)
-
+- [What is Mongoose?](#What-is-Mongoose)
+- [MongoDB](#MongoDB)
+- [Terminology](#Terminology)
+- [Setting up the database](#Setting-up-the-database)
+  - [Creating a schema](#Creating-a-schema)
+  - [Adding a record](#Adding-a-record)
+  - [Retrieving a record](#Retrieving-a-record)
+- [Conclusion](#Conclusion)
+    - [sources:](#sources)
 
 ## What is Mongoose?
 
 Mongoose is a library focused on Data modeling, made for MongoDB and Node.js.
 
-You could view Mongoose as an extra layer in between the database (MongoDB) and the project logic (Node.js). 
+You could view Mongoose as an extra layer in between the database (MongoDB) and the project logic (Node.js).
 
 Mongoose lets you communicate with your MongoDB using Javascript.
 
@@ -46,17 +43,17 @@ This makes MongoDB a flexible database to work with when prototyping, as you are
 
 Firstly one would install the needed dependencies, including Node.js and Mongoose. A lot of tutorials can be found on this subject.
 
-For our project we decided to use mlab to store our data. They host free databases (not suited for production, but very easy to use for prototyping). 
+For our project we decided to use mlab to store our data. They host free databases (not suited for production, but very easy to use for prototyping).
 
 By storing the data online we could rapidly prototype and test on all sorts of devices without having to deploy our local database.
 
 ### Creating a schema
 
-A first step if we want to save documents to our database would be defining the structure of this document globally. 
+A first step if we want to save documents to our database would be defining the structure of this document globally.
 
 For example if we are planning to work with users, we could define a very basic user schema:
 
-```javascript 
+```javascript
 // requiring the mongoose dependency
 let mongoose = require('mongoose')
 
@@ -64,7 +61,7 @@ let mongoose = require('mongoose')
 var userSchema = new mongoose.Schema({
     username: String
     password: String
-}) 
+})
 
 // defining a model, referencing the schema
 module.exports = mongoose.model('User', userSchema)
@@ -98,10 +95,10 @@ For example if we were to retrieve our newly created user, we could search it us
 
 ```javascript
 User.find({
-    username: 'test'
+  username: 'test'
 }).then(retrievedDocument => {
-    console.log(retrievedDocument)
-  })
+  console.log(retrievedDocument)
+})
 ```
 
 The above code would print the found result(s) to the console.
@@ -121,4 +118,3 @@ I have personally used it for the prototyping of an application for which the st
 - [The Mongoose documentation](https://mongoosejs.com/docs/queries.html)
 - [Introduction to Mongoose](https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/)
 - [mlab](https://mlab.com)
-
